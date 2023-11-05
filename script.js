@@ -28,7 +28,6 @@ function createPassword() {
     while(length > password.length) {
         password += allChars[Math.floor(Math.random()*allChars.length)]
     }
-    console.log(password)
     inputBox.value = password
 }
 

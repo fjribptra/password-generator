@@ -13,8 +13,8 @@ body{
     display: flex;
 }
 .box{
-    width: 200px;
-    height: 250px;
+    width: 300px;
+    height: 350px;
     background-color: #fff;
     margin: auto;
     display: flex;
@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -33,24 +33,25 @@ body{
 -moz-box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.51);
 }
 .box h1{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .box h1 span{
     color: blue;
 }
 .input-box{
+    width: 100%;
     display: flex;
-    /* background-color: red; */
     padding: .3em;
     border: 2px solid black;
 }
 .input-box input{
+    width: 100%;
     font-size: .7rem;
     outline: 0;
     border: 0;
 }
 .input-box img{
-    width: 20px;
+    width: 30px;
     cursor: pointer;
 }
 .box .password-range{
@@ -60,10 +61,10 @@ body{
     align-items: center;
 }
 .box .password-range p{
-    font-size: .5rem;
+    font-size: .6rem;
 }
 .box .password-range input{
-    width: 120px;
+    width: 190px;
 }
 .box button{
     width: 100%;
