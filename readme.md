@@ -1,5 +1,5 @@
 
-# Note App
+# Password Generator 🔑
 
 Halo semua, ini adalah project Password Generator. Project ini dibuat dengan HTML, CSS dan Javascript
 ## Authors
