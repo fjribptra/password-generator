@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator | Fajrieee</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Generate a <span>Random Password</span></h1>
+            <div class="input-box">
+                <input type="text" placeholder="Password" id="inputBox">
+                <img src="Copylogo.png" alt="copy-button" id="copyButton">
+            </div>
+            <div class="password-range">
+                <p><strong>Length : </strong><span id="passLength">4</span></p>
+                <input type="range" min="4" max="50" step="1" id="inputRange" value="12">
+            </div>
+            <button id="generateButton">Generate Password</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
