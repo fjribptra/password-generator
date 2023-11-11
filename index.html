@@ -15,8 +15,15 @@
                 <img src="Copylogo.png" alt="copy-button" id="copyButton">
             </div>
             <div class="password-range">
-                <p><strong>Length : </strong><span id="passLength">4</span></p>
+                <p class="passlength-wrapper"><strong>Length : </strong><span id="passLength">4</span></p>
                 <input type="range" min="4" max="50" step="1" id="inputRange" value="4">
+                <div class="meter">
+                    <p id="meter">Weak</p>
+                </div>
+            </div>
+            <div class="counter">
+                <button id="plus">+</button>
+                <button id="min">-</button>
             </div>
             <button id="generateButton">Generate Password</button>
         </div>
