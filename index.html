@@ -4,30 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Password Generator | Fajrieee</title>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <h1>Generate a <span>Random Password</span></h1>
-            <div class="input-box">
-                <input type="text" placeholder="Password" id="inputBox">
-                <img src="Copylogo.png" alt="copy-button" id="copyButton">
+    <nav class="p-5 flex justify-between bg-red-700 text-white">
+        <div class="flex items-center gap-3">
+            <i class="text-xl md:text-3xl fa-solid fa-lock"></i>
+            <h1 class="text-xl md:text-3xl">Password Generator</h1>
+        </div>
+        <a class="flex items-center gap-3" href="https://github.com/fjribptra/password-generator">
+            <i class="text-2xl fa-brands fa-github"></i>
+            <p class="hidden md:block text-2xl">Github</p>
+        </a>
+    </nav>
+    <section class="container mx-auto py-40 flex justify-between p-5">
+        <div class="w-full flex flex-col gap-7">
+            <h1 class="text-5xl md:text-7xl font-bold">Instantly generate a <span class="text-red-700">secure</span> random password</h1>
+            <p class="w-[70%] text-lg md:text-2xl text-slate-500">Use our online password generator tool to instantly create a secure, random password.</p>
+            <a href="#password-generator" class="text-white bg-red-700 rounded p-5 w-fit">Try Password Generator</a>
+        </div>
+        <div class="hidden md:block w-1/2 text-center">
+            <i class="text-[300px] fa-solid fa-lock"></i>
+        </div>
+    </section>
+    <div id="password-generator" class="max-w-3xl mx-auto p-5">
+        <div class="box mx-auto flex flex-col gap-5">
+            <h1 class="text-2xl">Generate a <span>Random Password</span></h1>
+            <div class="input-box flex items-center gap-5">
+                <input class="p-5 w-full" type="text" placeholder="Password" id="inputBox">
+                <i class="fa-regular fa-copy text-3xl cursor-pointer" title="Copy" id="copyButton"></i>
             </div>
-            <div class="password-range">
-                <p class="passlength-wrapper"><strong>Length : </strong><span id="passLength">4</span></p>
-                <input type="range" min="4" max="50" step="1" id="inputRange" value="4">
-                <div class="meter">
+            <div class="password-range flex justify-between items-center gap-5 w-full">
+                <p class="passlength-wrapper flex gap-3 w-1/4"><strong>Length : </strong><span id="passLength">4</span></p>
+                <input class="w-full" type="range" min="4" max="50" step="1" id="inputRange" value="4">
+                <div class="meter p-5 w-1/4">
                     <p id="meter">Weak</p>
                 </div>
             </div>
-            <div class="counter">
-                <button id="plus">+</button>
-                <button id="min">-</button>
+            <div class="counter flex justify-center gap-5">
+                <button class="p-5 font-bold text-3xl" id="plus">+</button>
+                <button class="p-5 font-bold text-3xl" id="min">-</button>
             </div>
-            <button id="generateButton">Generate Password</button>
+            <button class="p-5 text-center bg-red-700 text-white w-full" id="generateButton">Generate Password</button>
         </div>
     </div>
+    <footer class="p-10">
+        <p class="text-center text-slate-500">&copy; 2024 By <a class="text-blue-500" href="https://fjribptra.github.io">fjribptra</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
